@@ -1,2 +1,2 @@
 # web-omni
-#latihan untuk web omni
+latihan untuk web omni
