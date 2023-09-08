@@ -1,0 +1,127 @@
+*,
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+.background-image {
+    background: url(BG-Omni.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.img {
+    width: 780px;
+    height: 360px;
+
+}
+
+.container {
+    margin-top: 1%;
+    border: 4px dashed green;
+    height: 100%;
+    
+}
+
+.up {
+    clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 50% 100%, 25% 75%);
+    height: 90px;
+    width: 100px
+    
+}
+
+.back {
+    clip-path: polygon(25% 25%, 50% 0%, 75% 25%, 75% 75%, 25% 75%);
+    height: 90px;
+    width: 100px
+}
+
+.left{
+    clip-path: polygon(25% 25%, 75% 25%, 100% 50%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+    
+}
+
+.right {
+    clip-path: polygon(0% 50.25%, 25% 25%, 75% 25%, 75% 75%, 25% 75%);
+    height: 100px;
+    width: 90px
+}
+
+
+
+.col-2 {
+    margin-left: 13%;
+    margin-top: -50px;
+   
+}
+
+.col-1 {
+    margin-left: 13%;
+    margin-top: 2%;
+}
+
+
+.col-3 {
+  
+    margin-top: -50px;
+    width: 23%;
+    margin-left: 10px;
+}
+
+.joystick {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 60%;
+    position: relative;
+    margin-left: 65%;
+    margin-top: -270px;
+
+}
+
+.stick {
+    width: 50px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+}
+
+.j {
+    padding-top: 20px;
+
+}
+
+.stop {
+    width: 25%;
+    margin-left: 180px;
+}
+
+.refresh {
+    width: 25%;
+}
+
+footer {
+    height: 50px;
+    background-color: rgb(113, 113, 173);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 98px;
+  }
+
+.logo {
+  
+    height: 50%;
+    width: 40px;
+}
