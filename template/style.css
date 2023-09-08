@@ -96,7 +96,7 @@ body {
     transition: transform 0.1s;
 }
 
-.j {
+.tombol {
     padding-top: 20px;
 
 }
@@ -105,6 +105,8 @@ body {
     width: 25%;
     margin-left: 180px;
 }
+
+
 
 .refresh {
     width: 25%;
