@@ -21,16 +21,16 @@ body {
 
 .container {
     margin-top: 1%;
-    border: 4px dashed green;
-    height: 100%;
-    
+    border: 6px dashed green;
+    height: 36vh;
+    width: 40%;
+
 }
 
 .up {
     clip-path: polygon(25% 25%, 75% 25%, 75% 75%, 50% 100%, 25% 75%);
     height: 90px;
-    width: 100px
-    
+    width: 100px;
 }
 
 .back {
@@ -39,11 +39,10 @@ body {
     width: 100px
 }
 
-.left{
+.left {
     clip-path: polygon(25% 25%, 75% 25%, 100% 50%, 75% 75%, 25% 75%);
     height: 100px;
     width: 90px
-    
 }
 
 .right {
@@ -55,21 +54,21 @@ body {
 
 
 .col-2 {
-    margin-left: 13%;
+    margin-left: 11%;
     margin-top: -50px;
-   
+
 }
 
 .col-1 {
-    margin-left: 13%;
+    margin-left: 11%;
     margin-top: 2%;
 }
 
 
 .col-3 {
-  
+
     margin-top: -50px;
-    width: 23%;
+    width: 20%;
     margin-left: 10px;
 }
 
@@ -79,8 +78,8 @@ body {
     background-color: #ddd;
     border-radius: 60%;
     position: relative;
-    margin-left: 65%;
-    margin-top: -270px;
+    margin-left: 75%;
+    margin-top: -290px;
 
 }
 
@@ -101,16 +100,12 @@ body {
 
 }
 
-.stop {
-    width: 25%;
-    margin-left: 180px;
-}
-
-
-
+.stop,
 .refresh {
-    width: 25%;
+    width: 20%;
 }
+
+
 
 footer {
     height: 50px;
@@ -120,10 +115,76 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 98px;
-  }
+}
 
 .logo {
-  
+
     height: 50%;
     width: 40px;
+}
+
+@media (max-width: 390px) {
+    .container {
+        height: 300px;
+        width: auto;
+    }
+
+    .img-thumbnail {
+        width: auto;
+        height: auto;
+    }
+
+    .footer {
+        margin-top: 50%;
+    }
+
+    .row {
+        margin-left: -10%;
+        margin-top: 8%;
+
+    }
+
+    .col-1,
+    .col-2 {
+        padding-left: 27px;
+    }
+
+    .col-3 {
+        margin-right: 5%;
+    }
+
+    .stick {
+        width: 30px;
+        height: 30px;
+    }
+
+    .joystick {
+        width: 100px;
+        height: 100px;
+        margin-left: 70%;
+        margin-top: -60%;
+    }
+
+    .tombol {
+        margin-top: -10%;
+        width: 100%;
+
+    }
+
+    .stop,
+    .refresh {
+        margin-left: 0%;
+        width: 40%;
+        height: auto;
+    }
+
+    .up,.back {
+        height: 50px;
+        width: 60px;
+    }
+
+    .left,.right {
+        width: 50px;
+        height: 60px;
+    }
 }
