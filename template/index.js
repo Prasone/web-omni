@@ -2,19 +2,23 @@
 const stick = document.querySelector(".stick");
 let isMoving = false;
 
-stick.addEventListener("mousedown", function() {
+function startMove() {
     isMoving = true;
-});
+}
 
-document.addEventListener("mouseup", function() {
+function stopMove() {
     isMoving = false;
-});
+    // Anda bisa menambahkan logika untuk mengembalikan stick ke posisi awal jika diinginkan
+}
 
-document.addEventListener("mousemove", function(event) {
+function performMove(event) {
     if (isMoving) {
+        let clientX = event.clientX || event.touches[0].clientX;
+        let clientY = event.clientY || event.touches[0].clientY;
+
         let parentBounds = stick.parentElement.getBoundingClientRect();
-        let x = event.clientX - parentBounds.left;
-        let y = event.clientY - parentBounds.top;
+        let x = clientX - parentBounds.left;
+        let y = clientY - parentBounds.top;
 
         // Batasi gerakan stick ke dalam lingkaran joystick
         let distance = Math.sqrt((x - parentBounds.width/2)**2 + (y - parentBounds.height/2)**2);
@@ -27,4 +31,14 @@ document.addEventListener("mousemove", function(event) {
         stick.style.left = x + "px";
         stick.style.top = y + "px";
     }
-});
+}
+
+// Untuk mouse
+stick.addEventListener("mousedown", startMove);
+document.addEventListener("mouseup", stopMove);
+document.addEventListener("mousemove", performMove);
+
+// Untuk sentuhan di perangkat seluler
+stick.addEventListener("touchstart", startMove);
+document.addEventListener("touchend", stopMove);
+document.addEventListener("touchmove", performMove);
