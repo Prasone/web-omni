@@ -120,7 +120,6 @@ footer {
 }
 
 .logo {
-
     height: 50%;
     width: 40px;
 }
@@ -178,7 +177,7 @@ footer {
 
     .footer{
         margin-top: 50%;
-        height: 5vh;
+        height: 10vh;
     }
 }
 
