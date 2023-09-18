@@ -51,13 +51,21 @@ body {
     width: 90px
 }
 
-
+.refresh:hover{
+    color: #333;
+}
 
 .col-2 {
     margin-left: 11%;
     margin-top: -50px;
 
 }
+
+
+button:hover {
+    box-shadow: 30%;
+    transform: scale(1.2)
+  }
 
 .col-1 {
     margin-left: 11%;
